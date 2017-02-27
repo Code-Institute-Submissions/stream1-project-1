@@ -10,12 +10,13 @@
 	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
 	<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
-	<nav class="navbar nav-inverse nav-fixed-top">
+	<nav class="navbar nav-fixed-top ">
 		<div class="container">
 			<div class= "navbar-header">
-			<a class="nav-brand" href="/">Band</a>
+			<a class="nav-brand" href="/"><h1>Band</h1></a>
 			</div>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="/">Home</a></li>
@@ -28,7 +29,32 @@
 
 	<!--div to hold template content -->
 	<div ng-view>
-
+	
 	</div>
+
+	<footer id="footer" class="container-fluid">
+	<div class="container">
+		<div class="row">
+		    
+		    <div class="col-sm-4">
+		    <h2 class>Connect</h2>
+		      <span><a href="http://facebook.com"><img class="miniLink" src="media/icons/facebook.png" alt="facebook logo"></a></span>
+		      <span><a href="http://twitter.com"><img class="miniLink" src="media/icons/twitter.png" alt="twitter logo"></a></span>
+		      <span><a href="http://youtube.com"><img class="miniLink" src="media/icons/youtube.png" alt="facebook logo"></a></span>
+		    </div>
+		    <div class="col-sm-4">
+		     <h2>Subscribe</h2>
+		     <p>Subscribe to our mailing list to stayed updated</p>
+			<input class="btn btn-sm" type="email" name="email" id="email" placeholder="Your Email" required>
+			<button class="btn btn-info btn-sm" type="submit">Submit</button>
+		    </div>
+		    <div class="col-sm-4">
+		      <h2>Contact</h2>
+		      <span class="glyphicon glyphicon-envelope"></span><a href="mailto:maisie-campbell@hotmail.com?Subject=Hello%20again" target="_top">Email Us!</a>
+		    </div>
+  		</div>
+	</div>	
+	</footer>
 </body>
+
 </html>
