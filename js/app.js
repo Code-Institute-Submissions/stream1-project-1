@@ -1,27 +1,28 @@
 angular.module('BandProject1', ['ngRoute', 'RouteControllers']);
 
 angular.module('BandProject1').config(function($locationProvider, $routeProvider){
-	$locationProvider.html5Mode(true);
+	
 
 	$routeProvider.when('/', {
 		templateUrl: 'templates/home.html',
 		controller: 'HomeController'
 	})
 
-	.when('/about.html', {
+	.when('/about', {
 		templateUrl: 'templates/about.html',
 		controller: 'AboutController'
 	})
-	.when('/media.html', {
+	.when('/media', {
 		templateUrl: 'templates/media.html',
 		controller: 'MediaController'
 	})
-	.when('/gigs.html', {
+	.when('/gigs', {
 		templateUrl: 'templates/gigs.html',
 		controller: 'GigController'
 	})
-	.when('/contact.html', {
+	.when('/contact', {
 		templateUrl: 'templates/contact.html',
 		controller: 'ContactController'
 	});
+	$locationProvider.html5Mode(true);
 });
