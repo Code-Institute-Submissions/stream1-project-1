@@ -1,0 +1,33 @@
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+		<form  class="form-horizontal" name="contactForm" data-ng-submit="SubmitForm()" novalidate>
+			<fieldset>
+				<legend class="text-center">Contact Us</legend>
+			
+			<div class="form-group"> 
+				<label>Name</label>
+				<input type="text" name="name" id="contactName" class="form-control" data-ng-model="contact.name" required placeholder="Full Name Required">
+			</div>
+			<div class="form-group"> 
+				<label>Email</label>
+				<input type="email" name="email" id="contactEmail" class="form-control" data-ng-model="contact.email" required placeholder="Your Email Required">
+		
+			
+				<label>Mobile Number</label>
+				<input type="text" name="mobile" id="contactMobile" class="form-control" data-ng-model="contact.mobile" required placeholder="Enter your mobile number here">
+			
+			
+				<label>Message</label>
+				 <textarea class="form-control" type="textarea" id="Contactmessage" placeholder="Message" maxlength="1000" rows="10"></textarea>
+                 
+				
+
+				<button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+
+			</div>	
+			</fieldset>
+		</form>
+	</div>	
+</div>
+</div>
