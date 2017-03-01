@@ -3,7 +3,58 @@ body {
 	
 }
 
+footer{
+          padding-top: 5px;
+          background-color: #eee;
+          text-align: center;
+          
+}
+
+
 .miniLink {
 	width: 50px ;
-	margin: 30px;
+	margin: 20px;
+}
+
+.glyphicon-envelope {
+	font-size: 40px;
+	margin: 10px;
+}
+
+.rounded {
+	margin: 55px;
+	border-radius: 10px;
+}
+
+#homePageTxt {
+	margin:20px;
+
+}
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+/*css specific properties col-lg-* */
+}
+ 
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+/*css specific properties col-md-* */
+}
+ 
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+/* css specific properties col-sm-* */
+}
+ 
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+/* css specific properties col-xs-* */
+}
+ 
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+/* css specific properties col-xs-* or none for default */
 }
