@@ -6,6 +6,7 @@
 	<title>Stream 1 Project</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 	<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
 	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
@@ -16,11 +17,12 @@
 	<nav class="navbar nav-fixed-top ">
 		<div class="container">
 			<div class= "navbar-header">
-			<a class="nav-brand" href="/"><h1>Band</h1></a>
+			<a class="nav-brand" id="bandTitle" href="/"><h1>XO</h1></a>
 			</div>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="/">Home</a></li>
 				<li><a href="/about">About</a></li>
+				<li><a href="/media">Media</a></li>
 				<li><a href="/gigs">Gigs</a></li>
 				<li><a href="/contact">Contact</a></li>
 			</ul>
@@ -45,7 +47,7 @@
 		    </div>
 		    <div class="col-sm-4">
 		     <h3>Subscribe</h3>
-		     <p>Subscribe to our mailing list to stayed updated</p>
+		     <p>Subscribe to our mailing list to stay updated</p>
 			<input class="btn btn-sm" type="email" name="email" id="email" placeholder="Your Email" required>
 			<button class="btn btn-info btn-sm" type="submit">Submit</button>
 		    </div>
