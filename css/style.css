@@ -1,5 +1,11 @@
+/*==================== 
+		INDEX
+======================*/
+
 body {
 	padding: 10px;
+	background-image: -webkit-linear-gradient(top, #60ebeb 0%, #e9c9f0 100%);
+	font-family: 'Quicksand', sans-serif;
 	
 }
 
@@ -7,6 +13,7 @@ footer{
           padding-top: 5px;
           background-color: #eee;
           text-align: center;
+          border-radius: 10px;
           
 }
 
@@ -21,15 +28,95 @@ footer{
 	margin: 10px;
 }
 
-.rounded {
+.homeImgs {
 	margin: 55px;
 	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+
+	
+
 }
+
 
 #homePageTxt {
 	margin:20px;
-
+	
 }
+
+/*==================== 
+		MEDIA 
+======================*/
+
+.polaroid-images a {
+	background: white;
+	display: inline;
+	float: left;
+	margin: 0 15px 30px;
+	padding: 10px 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+	-moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+	box-shadow: 0 4px 6px rgba(0,0,0,.3);
+	-webkit-transition: all .15s linear;
+	-moz-transition: all .15s linear;
+	transition: all .15s linear;
+	z-index: 0;
+	position: relative;
+}
+
+.polaroid-images a:after {
+	color: #333;
+	font-size: 20px;
+	content: attr(title);
+	position: relative;
+	top: 15px;
+}
+
+.polaroid-images img {
+	display: block;
+	width: inherit;
+}
+
+/* Rotate all even images 2 degrees */
+.polaroid-images a:nth-child(even){
+	-webkit-transform:rotate(2deg);
+	-moz-transform:rotate(2deg);
+	transform:rotate(2deg);
+}
+
+.polroid-images a:nth-child(3n) {
+	-webkit-transform:rotate(-12deg);
+	-moz-transform:rotate(-12deg);
+	transform:rotate(-12deg);
+}
+
+.polroid-images a:nth-child(4n) {
+	-webkit-transform:rotate(14deg);
+	-moz-transform:rotate(14deg);
+	transform:rotate(14deg);
+}
+.polroid-images a:nth-child(5n) {
+	-webkit-transform:rotate(-18deg);
+	-moz-transform:rotate(-18deg);
+	transform:rotate(-18deg);
+}
+
+.polaroid-images a:hover{
+	-webkit-transform: rotate(0deg); 
+	-moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+	-webkit-transform: scale(1.2); 
+	-moz-transform: scale(1.2);
+        transform: scale(1.2);
+	z-index:10;
+	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+	-moz-box-shadow: 0 10px 20px rgba(0,0,0,.7);
+        box-shadow: 0 10px 20px rgba(0,0,0,.7);
+}
+
 
 /*==================================================
 =            Bootstrap 3 Media Queries             =
