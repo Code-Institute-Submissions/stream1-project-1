@@ -2,10 +2,21 @@
 		INDEX
 ======================*/
 
+html {
+	height:100%;
+}
+
 body {
+	height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 	padding: 10px;
 	background-image: -webkit-linear-gradient(top, #60ebeb 0%, #e9c9f0 100%);
 	font-family: 'Quicksand', sans-serif;
+	min-height: 400px;
+   margin-bottom: 150px;
+   clear: both;
 	
 }
 
@@ -28,6 +39,20 @@ footer{
 	font-size: 40px;
 	margin: 10px;
 }
+
+.container_body{
+	background-color: #eee;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+	-moz-box-shadow: 0 10px 20px rgba(0,0,0,.7);
+        box-shadow: 0 10px 20px rgba(0,0,0,.7);
+    margin-bottom: 170px;
+}
+
+/*==================== 
+		HOME
+======================*/
+
 
 .homeImgs {
 	margin: 55px;
@@ -189,6 +214,24 @@ border-radius:7px 7px 7px 7px ;
 	margin: 10px 5px 10px 70px
 }
 
+/*==================== 
+		ABOUT
+======================*/
+
+.bandMemberInfo{
+	
+  border-radius: 10px;
+  margin-top: 88px;
+  padding-bottom: 22px;
+  text-align: center;
+}
+
+.bandMemberInfo img {
+	border-radius:250px;
+  height: 250px;
+  margin: -66px 0 22px 0;
+  vertical-align: top;
+}
 
 /*==================================================
 =            Bootstrap 3 Media Queries             =
