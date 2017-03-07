@@ -19,22 +19,36 @@
 				<input type="email" name="email" id="contactEmail" class="form-control" ng-model="user.email" required placeholder="Email Address">
 				<p data-ng-show="contactForm.email.$invalid && !contactForm.email.$pristine" class="help-block">Enter a valid email</p>
 			</div>
+
+			<!-- Telephone Number -->
 			<div class="form-group">
-				<label>Mobile Number</label>
-				<input type="text" name="mobile" id="contactMobile" class="form-control" ng-model="user.mobile" required placeholder="Mobile Number" pattern="^\s*\(?(020[7,8]{1}\)?[ ]?[1-9]{1}[0-9{2}[ ]?[0-9]{4})|(0[1-8]{1}[0-9]{3}\)?[ ]?[1-9]{1}[0-9]{2}[ ]?[0-9]{3})\s*$">
-				<p data-ng-show="contactForm.mobile.$invalid && !contactForm.mobile.$pristine" class="help-block">Enter a valid UK mobile number</p>
+				<label>Telephone Number</label>
+				<input type="tel" name="telephone" id="contactTelephone" class="form-control" ng-model="user.telephone" required placeholder="Telephone Number" pattern="^\s*\(?(020[7,8]{1}\)?[ ]?[1-9]{1}[0-9{2}[ ]?[0-9]{4})|(0[1-8]{1}[0-9]{3}\)?[ ]?[1-9]{1}[0-9]{2}[ ]?[0-9]{3})\s*$">
+				<p data-ng-show="contactForm.telephone.$invalid && !contactForm.telephone.$pristine" class="help-block">Enter a valid UK telephone number</p>
 			</div>
+
+			<!-- Message -->
 			<div class="form-group">
 				<label>Message</label>
 				 <textarea class="form-control" type="textarea" id="Contactmessage" placeholder="Message" minlength="2" rows="10" ng-model="user.message"></textarea>
             </div> 
-				
-
-				<button type="submit" class="btn btn-primary" id="submitBtn" ng-disabled="contactForm.$invalid">Submit</button>
-
-				
+				<!-- Submit -->
+				<button type="submit" class="btn btn-primary" id="submitBtn" ng-disabled="contactForm.$invalid" data-toggle="modal" data-target="#contactConfirm">Submit</button>
 			</fieldset>
 		</form>
-	</div>	
+	</div>
+	<div class="modal fade ng-scope" tabindex="-1" role="dialog" id="contactConfirm">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Thanks for your message!<span class="ng-binding"></span></h4>
+				</div>
+				<div class="modal-body">
+					<p>We will get back to you as soon as we can.</p>
+				</div>
+			</div> <!-- /.modal-content -->
+		</div> <!-- /.modal-dialog -->
+	</div> <!-- /.modal -->
 </div>
 </div>
