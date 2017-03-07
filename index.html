@@ -14,12 +14,12 @@
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
-	<nav class="navbar nav-fixed-top ">
+	<nav class="navbar nav-fixed-top">
 		<div class="container">
 			<div class= "navbar-header">
 			<a class="nav-brand" id="bandTitle" href="/"><h1>XO</h1></a>
 			</div>
-			<ul class="nav navbar-nav navbar-right">
+			<ul class="nav navbar-nav navbar-right nav-fixed-top">
 				<li><a href="/">Home</a></li>
 				<li><a href="/about">About</a></li>
 				<li><a href="/media">Media</a></li>
@@ -36,7 +36,7 @@
 
 	<!--Footer for connect, subscribe, contact -->
 	<footer id="footer" class="footer navbar-fixed-bottom">
-	<div class="container">
+	
 		<div class="row">
 		    
 		    <div class="col-sm-4">
@@ -48,7 +48,7 @@
 		    <div class="col-sm-4">
 		     <h3>Subscribe</h3>
 		     <p>Subscribe to our mailing list to stay updated</p>
-			<input class="btn btn-sm" type="email" name="email" id="email" placeholder="Your Email" required>
+			<input class="btn btn-sm" type="email" name="email" id="email" placeholder="Your Email" ng-model="user.email" required >
 			<button class="btn btn-info btn-sm" type="submit">Submit</button>
 		    </div>
 		    <div class="col-sm-4">
@@ -58,7 +58,7 @@
 
 		    </div>
   		</div>
-	</div>	
+		
 	</footer>
 	<script src="js/app.js"></script>
 	<script src="js/controller.js"></script>
