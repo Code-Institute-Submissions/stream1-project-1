@@ -292,5 +292,8 @@ th {
  
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
+	#wrapper{
+		padding-bottom: 200px;
+	}
 /* css specific properties col-xs-* or none for default */
 }
