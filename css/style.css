@@ -170,6 +170,11 @@ footer{
         box-shadow: 0 10px 20px rgba(0,0,0,.7);
 }
 
+.modalImg {
+	margin: 0 60px 0 80px;
+}
+
+
 /*Videos */
 
 .video_outer_wrap {
