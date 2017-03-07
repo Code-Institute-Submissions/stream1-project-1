@@ -8,16 +8,24 @@ html {
 
 body {
 	height: 100%;
+	padding-bottom: 70px; 
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
-	padding: 10px;
 	background-image: -webkit-linear-gradient(top, #60ebeb 0%, #e9c9f0 100%);
 	font-family: 'Quicksand', sans-serif;
 	min-height: 400px;
    margin-bottom: 150px;
    clear: both;
 	
+}
+
+.nav-fixed-top {
+	background-color: #eee;
+}
+
+#wrapper{
+	margin-bottom: 170px;
 }
 
 footer{
@@ -46,7 +54,18 @@ footer{
 	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
 	-moz-box-shadow: 0 10px 20px rgba(0,0,0,.7);
         box-shadow: 0 10px 20px rgba(0,0,0,.7);
-    margin-bottom: 170px;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+.nav-brand, h1, a {
+	color: black;
+	text-decoration:none;
+}
+
+.nav-brand, h1, a:hover {
+	text-decoration:none;
+
 }
 
 /*==================== 
@@ -232,6 +251,17 @@ border-radius:7px 7px 7px 7px ;
   margin: -66px 0 22px 0;
   vertical-align: top;
 }
+
+/*==================== 
+		GIGS
+======================*/
+
+th {
+	font-size: 20px;
+	font-weight: bold;
+
+}
+
 
 /*==================================================
 =            Bootstrap 3 Media Queries             =
