@@ -29,7 +29,32 @@ angular.module('RouteControllers', [])
 	.controller('GigController', function($scope){
 
 	})
+
 	.controller('ContactController', function($scope){
 
-	});
+		$scope.contactUser = {};
+
+
+		$scope.submitForm = function (){
+			if ($scope.contactForm.$valid){
+				$scope.contactUser.name = $scope.user.name;
+				$scope.contactUser.email = $scope.user.email;
+				$scope.contactUser.mobile = $scope.user.mobile;
+				$scope.contactUser.message = $scope.user.message;
+
+				alert('form has been submitted');
+
+				$scope.submitted = true;
+			}
+		
+
+		console.log($scope.contactUser.name + " " + $scope.contactUser.email + " " + $scope.contactUser.mobile + " " + $scope.contactUser.message);
+			
+		};
+
+
+		});
+		
+	
+
 
