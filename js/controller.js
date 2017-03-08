@@ -39,7 +39,7 @@ angular.module('RouteControllers', [])
 			if ($scope.contactForm.$valid){
 				$scope.contactUser.name = $scope.user.name;
 				$scope.contactUser.email = $scope.user.email;
-				$scope.contactUser.telephone = $scope.user.telephone;
+				$scope.contactUser.tel = $scope.user.tel;
 				$scope.contactUser.message = $scope.user.message;
 
 				//alert('form has been submitted');
