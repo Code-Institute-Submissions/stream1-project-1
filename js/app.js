@@ -1,4 +1,4 @@
-angular.module('BandProject1', ['ngRoute', 'RouteControllers']);
+angular.module('BandProject1', ['ngRoute', 'RouteControllers', 'FooterDirective']);
 
 angular.module('BandProject1').config(function($locationProvider, $routeProvider){
 	
