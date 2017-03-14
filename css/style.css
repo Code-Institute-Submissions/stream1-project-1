@@ -9,11 +9,14 @@ html, body {
 	padding: 0; 
     margin: 0;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-	background-image: -webkit-linear-gradient(top, #60ebeb 0%, #e9c9f0 100%);
+    /*background-attachment: fixed;
+	background-image: -webkit-linear-gradient(top, #60ebeb 0%, #e9c9f0 100%); */
+	background-image: url(/media/images/header.jpg);
+    background-position:center;
+    background-size:cover;
+    -webkit-background-size:cover;
 	font-family: 'Quicksand', sans-serif;
 	min-height: 400px;
-   margin-bottom: 150px;
    overflow-x: hidden;
 	
 }
@@ -32,6 +35,8 @@ html, body {
    
 }
 
+#coverImage
+
 /*==================== 
 	 NAVIGATION 
 ======================*/
@@ -41,15 +46,13 @@ html, body {
 	margin:0; 
 }
 
-.nav-fixed-top {
-	background-color: #eee;
-}
 
 .nav-container {
 	display:flex;
 	justify-content: flex-end;
 	align-items:center;
 	padding-left: 10px;
+	background-color: #eee;
 }
 
 #bandTitle {
@@ -76,7 +79,6 @@ footer{
           padding-top: 5px;
           background-color: #eee;
           text-align: center;
-          border-radius: 10px;
           margin:10px 0 0 0;         
 }
 
@@ -110,6 +112,15 @@ footer{
 	width: inherit;
 }
 
+.jumbotron{
+	background-image: url("/media/images/header.jpg");
+	margin-bottom: 0;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-position:center;
+	-webkit-background-size:cover;
+	background-size: cover;
+}
 
 
 /*==================== 
