@@ -1,4 +1,4 @@
-<footer id="footer" class="footer navbar-fixed-bottom">
+<footer id="footer" class="footer navbar-deafult">
 	
 		<div class="row">
 		    
@@ -11,14 +11,20 @@
 		    <div class="col-sm-4">
 		     <h3>Subscribe</h3>
 		     <p>Subscribe to our mailing list to stay updated</p>
-			<input class="btn btn-sm" type="email" name="email" id="email" placeholder="Your Email" ng-model="user.email" required >
-			<button class="btn btn-info btn-sm" type="submit">Submit</button>
+		    <form name="subsribeForm" data-ng-submit="submitForm()" ng-class="{ 'has-error' : subscribeForm.email.$invalid && !subscribeForm.email.$pristine }">
+		    <div class="input-group">
+			<input type="email" name="email" id="contactEmail" class="form-control" ng-model="user.email" required placeholder="Email Address">
+			<span class="input-group-btn">
+			<button class="btn btn-info " type="submit">Submit</button>
+			</span>
+			</div>
+			<p data-ng-show="subsribeForm.email.$invalid && !subscribeForm.email.$pristine" class="help-block">Enter a valid email</p>
+			</form>
 		    </div>
 		    <div class="col-sm-4">
 		      <h3>Contact</h3>
 		      <span class="glyphicon glyphicon-envelope"></span>
 		      <a href="mailto:maisie-campbell@hotmail.com?Subject=Hello%20again" target="_top">Email Us!</a>
-
 		    </div>
   		</div>
 		
