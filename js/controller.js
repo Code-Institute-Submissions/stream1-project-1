@@ -2,6 +2,18 @@ angular.module('RouteControllers', [])
 
 	.controller('HomeController', function($scope){
 
+		$scope.subscribeUser ={};
+
+	$scope.submitForm = function (){
+		if($scope.subscribeForm.$valid){
+			$scope.subscribeUser.email = $scope.user.email;
+
+			//modal will let user know email has been accepted
+
+			//will clear the field 
+			$scope.user.email = '';
+		}
+	};
 	})
 	.controller('AboutController', function($scope){
 
@@ -45,6 +57,14 @@ angular.module('RouteControllers', [])
 				//alert('form has been submitted');
 
 				$scope.submitted = true;
+
+				//clear form fields for next use
+				$scope.user.name = '';
+				$scope.user.email= '';
+				$scope.user.tel= '';
+				$scope.user.message= '';
+
+
 			}
 		
 
