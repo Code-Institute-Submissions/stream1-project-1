@@ -3,7 +3,7 @@
 		<div class="row">
 		    
 		    <div class="col-sm-4">
-		    <h3 class>Connect</h3>
+		    <h3>Connect</h3>
 		      <span><a href="http://facebook.com"><img class="miniLink" src="media/icons/facebook.png" alt="facebook logo"></a></span>
 		      <span><a href="http://twitter.com"><img class="miniLink" src="media/icons/twitter.png" alt="twitter logo"></a></span>
 		      <span><a href="http://youtube.com"><img class="miniLink" src="media/icons/youtube.png" alt="facebook logo"></a></span>
@@ -11,21 +11,34 @@
 		    <div class="col-sm-4">
 		     <h3>Subscribe</h3>
 		     <p>Subscribe to our mailing list to stay updated</p>
-		    <form name="subsribeForm" data-ng-submit="submitForm()" ng-class="{ 'has-error' : subscribeForm.email.$invalid && !subscribeForm.email.$pristine }">
+		    <form name="subscribeForm" data-ng-submit="submitForm()" novalidate>
 		    <div class="input-group">
-			<input type="email" name="email" id="contactEmail" class="form-control" ng-model="user.email" required placeholder="Email Address">
+			<input type="email" name="email" class="form-control" ng-model="user.email" required placeholder="Email Address">
 			<span class="input-group-btn">
-			<button class="btn btn-info " type="submit">Submit</button>
+			<button class="btn btn-info " type="submit" data-toggle="modal" data-target="#subscribeConfirm" ng-disabled="subscribeForm.$invalid">Submit</button>
 			</span>
 			</div>
-			<p data-ng-show="subsribeForm.email.$invalid && !subscribeForm.email.$pristine" class="help-block">Enter a valid email</p>
+			<!--<p data-ng-show="subscribeForm.email.$invalid && !submitForm.email.$pristine" class="help-block">Enter a valid email</p> -->
 			</form>
 		    </div>
 		    <div class="col-sm-4">
 		      <h3>Contact</h3>
 		      <span class="glyphicon glyphicon-envelope"></span>
-		      <a href="mailto:maisie-campbell@hotmail.com?Subject=Hello%20again" target="_top">Email Us!</a>
+		      <span><a href="mailto:maisie-campbell@hotmail.com?Subject=Hello%20again" target="_top" class="link-effect">Email Us!</a></span>
 		    </div>
   		</div>
-		
+  		<!-- Modal -->
+		<div class="modal fade ng-scope" tabindex="-1" role="dialog" id="subscribeConfirm">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+			<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Thanks for subscribing!<span class="ng-binding"></span></h4>
+				</div>
+				<div class="modal-body">
+					
+				</div>
+			</div> <!-- /.modal-content -->
+		</div> <!-- /.modal-dialog -->
+	</div> 
 	</footer>
