@@ -4,16 +4,21 @@ angular.module('RouteControllers', [])
 
 		$scope.subscribeUser ={};
 
-	$scope.submitForm = function (){
-		if($scope.subscribeForm.$valid){
-			$scope.subscribeUser.email = $scope.user.email;
+	
+		$scope.submitForm = function (){
+			if($scope.subscribeForm.$valid){
+				$scope.subscribeUser.email = $scope.user.email;
 
-			//modal will let user know email has been accepted
+				$scope.submitted = true;
 
 			//will clear the field 
 			$scope.user.email = '';
 		}
+		console.log($scope.subscribeUser.email);
 	};
+
+	
+	
 	})
 	.controller('AboutController', function($scope){
 
@@ -74,6 +79,8 @@ angular.module('RouteControllers', [])
 
 
 		});
+
+	
 		
 	
 
