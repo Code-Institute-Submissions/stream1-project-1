@@ -233,11 +233,14 @@ nav a:focus {
 		FOOTER
 ======================*/
 
-footer{
+#footer{
           padding-top: 5px;
+          position: absolute;
+          bottom: 0; 
           background-color: #eee;
           text-align: center;
-          margin:10px 0 0 0;         
+          margin:10px 0 0 0;
+
 }
 
 .miniLink {
