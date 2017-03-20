@@ -35,6 +35,18 @@ html, body {
    
 }
 
+.link-effect {
+	transition:color .4s;
+	color: #265C83;
+}
+
+.link-effect:link, 
+.link-effect:visited { color: #265C83; }
+.link-effect:hover   { color: #7FDBFF; }
+.link-effect:active  {
+  transition: color .3s;
+  color: #0785f3;
+}
 
 
 /*==================== 
