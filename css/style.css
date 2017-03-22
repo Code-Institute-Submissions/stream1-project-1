@@ -276,16 +276,6 @@ nav a:focus {
 	width: inherit;
 }
 
-.jumbotron{
-	background-image: url("/media/images/header.jpg");
-	margin-bottom: 0;
-	height: 100px;
-	background-repeat: no-repeat;
-	background-position:center;
-	-webkit-background-size:cover;
-	background-size: cover;
-}
-
 
 /*==================== 
 		MEDIA 
