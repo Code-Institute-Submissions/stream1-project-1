@@ -252,6 +252,10 @@ nav a:focus {
 	margin: 10px;
 }
 
+.email_link {
+	vertical-align: middle;
+}
+
 /*==================== 
 		HOME
 ======================*/
