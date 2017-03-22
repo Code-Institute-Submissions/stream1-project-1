@@ -21,9 +21,9 @@ html, body {
 	
 }
 
-/*#wrapper{
+#gig_wrapper{
 	margin-bottom: 170px;
-}*/
+}
 
 .container_body{
 	background-color: #eee;
@@ -235,7 +235,6 @@ nav a:focus {
 
 #footer{
           padding-top: 5px;
-          position: absolute;
           bottom: 0; 
           background-color: #eee;
           text-align: center;
