@@ -44,7 +44,27 @@ angular.module('RouteControllers', [])
 	});
 	})
 	.controller('GigController', function($scope){
+/*
+		var now = new Date;
+		$('.expired-date').text(function (i, v){
+			if ( now > new Date(v)) {
+				$(this).addClass('expired-date');
 
+			}
+		});
+*/
+		var gigs = $('.js-gig-date'); // variable gigs is the class that is applied to the gig table
+		var now = new Date();
+		console.log(now);
+		gigs.each(function(i, el) {
+			var $el = $(el);
+			var date = $el.attr('data-date');
+			var gigtime = new Date(date);
+			console.log(gigtime);
+			if(now > gigtime) {
+				$el.addClass('passed');
+			}
+		});
 	})
 
 	.controller('ContactController', function($scope){
