@@ -452,6 +452,10 @@ th {
 
 }
 
+tr.passed td {
+	text-decoration: line-through;
+}
+
 /*==================== 
 		CONTACT
 ======================*/
