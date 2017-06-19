@@ -3,7 +3,7 @@ angular.module('FooterDirective', [])
 
 	return {
 		restrict: 'EA', // E/A -> element/attribute
-		templateUrl: '/templates/directives/footerDirective.html'
+		templateUrl: 'templates/directives/footerDirective.html'
 	};
 });
 
