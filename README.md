@@ -13,7 +13,7 @@ This app is a website for an elctronic music duo 'XO'
 ## Tech Used 
 ### Some of the tech used includes:
 - [AngularJS](https://angularjs.org/)
-	- **AngularJS** is ise to handle page routing, it is also used to build custom directives
+	- **AngularJS** is used to handle page routing, it is also used to build custom directives
 -[Bootstrap](http://getbootstrap.com/)
 	- **Bootstrap** to give the website a simple, responsive layout. 
 -[npm](https://npmjs.com/)
@@ -21,16 +21,6 @@ This app is a website for an elctronic music duo 'XO'
 -[bower](https://bower.io/)
 	- **Bower** is used to manage the installation of the libraries and frameworks. 
 
-## Tech Used
-### Some of the tech used includes:
-- [AngularJS](https://angularjs.org/)
-	- We use **AngularJS** to handle page routing, we also use it to make calls to the REST API and build custom directives
-- [Bootstrap](http://getbootstrap.com/)
-	- We use **Bootstrap** to give out project a simple, responsive layout
-- [npm](https://npmjs.com/)
-	- We use **npm** to help manage some of the dependencies in our application.
-- [bower](https://bower.io/)
-	- **Bower** is used to manage the installation of our libraries and frameworks. 
 
 ## Contributing 
 ### Getting the code up and running
@@ -48,4 +38,4 @@ This app is a website for an elctronic music duo 'XO'
 4. After those dependencies have been installed you'll need to make sure that you have **http-server** installed. You can install this by running the following: ```npm install -g http-server # this also may require sudo on Mac/Linux```
 5. Once **http-server** is installed run ```http-server```
 6. The project will now run on [localhost](http://127.0.0.1:8080)
-7. Make changes to the code and if you think it belongs here then just submit a pull request.
+7. Make changes to the code and if you think it belongs there then just submit a pull request.
