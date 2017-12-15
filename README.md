@@ -2,7 +2,7 @@
 
 ## Overview 
 
-This app is a website for an elctronic music duo 'XO'
+This app is a website for an imagined elctronic music duo 'XO' as part of a front end project
 
 # Features
 
