@@ -49,5 +49,6 @@ This app is a website for an elctronic music duo 'XO'
 
 ## Credits
 - modified Codrops cl-effect-18 [Link Hover Effect](https://tympanus.net/Development/CreativeLinkEffects/#cl-effect-18) navigation link effects
+- modified ILIN [Text Hover Effect](https://tympanus.net/Development/TextStylesHoverEffects/) for website logo
 
 
