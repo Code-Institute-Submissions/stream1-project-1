@@ -41,3 +41,15 @@ This app is a website for an elctronic music duo 'XO'
 5. Once **http-server** is installed run ```http-server```
 6. The project will now run on [localhost](http://127.0.0.1:8080)
 7. Make changes to the code and if you think it belongs there then just submit a pull request.
+
+
+
+
+## Testing
+- google chrome developer tools 
+- cross browser / platform testing. 
+
+## Credits
+- modified Codrops cl-effect-18 [Link Hover Effect](https://tympanus.net/Development/CreativeLinkEffects/#cl-effect-18) navigation link effects.
+
+
